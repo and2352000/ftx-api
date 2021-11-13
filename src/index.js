@@ -1,5 +1,4 @@
 require("dotenv").config();
-const { URLSearchParams } = require("url");
 
 const requestCreator = require("./utils");
 const cfg = require("./config");
