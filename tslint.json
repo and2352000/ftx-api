@@ -1,0 +1,16 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint:recommended", "tslint-config-prettier"],
+    "rulesDirectory": ["tslint-plugin-prettier"],
+    "jsRules": {},
+    "rules": {
+      "prettier": [true, ".prettierrc"],
+      "no-console": {
+        "severity": "warning"
+      },
+      "max-classes-per-file": false,
+      "max-file-line-count": [true, 500],
+      "max-line-length": [true, 120],
+      "no-duplicate-imports": true
+    }
+  }
