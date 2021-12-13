@@ -13,15 +13,15 @@ const instance = axios.create({
 });
 
 interface Options {
-  subaccount?: string;
+  // subaccount?: string;
   params?: Record<string, number | string>;
 }
 
 const restCreator =
-  (apiKey: string, secret: string) =>
+  (apiKey: string, secret: string, subaccount?: string) =>
   (method: HttpMethod) =>
   async (path: string, opt: Options = {}) => {
-    const { subaccount, params } = opt;
+    const { params } = opt;
     
     const timestamp = Date.now();
 
