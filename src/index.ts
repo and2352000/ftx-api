@@ -31,4 +31,4 @@ async function bootstrap() {
   }
 }
 
-bootstrap();
+setInterval(bootstrap, 1* 60* 60 *1000); // hour
