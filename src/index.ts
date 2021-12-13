@@ -13,7 +13,7 @@ async function bootstrap() {
 
     const balanceRes = await request.getWalletBalances();
     const usd = balanceRes?.result?.find((e)=>e.coin==='USD')
-    if(usd?.total && usd?.availableWithoutBorrow){
+    if(usd?.total){
       console.log('No USD to lend')
       return;
     }
